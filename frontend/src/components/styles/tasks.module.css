@@ -1,0 +1,44 @@
+.task_container {
+  background-color: #031955;
+  color: #fff;
+  padding: 10px 10px 0;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.task_container button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+}
+
+.button {
+  margin-top: -3px;
+}
+.first {
+  margin-top: 2px;
+}
+
+/* add new task button */
+.addTask_btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgba(179, 5, 243, 1);
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+.addTask_btn button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 5px;
+  color: #fff;
+}

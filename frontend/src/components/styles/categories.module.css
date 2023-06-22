@@ -1,0 +1,43 @@
+.cate_card_flex {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cate_card {
+  background-color: #031955;
+  width: 50%;
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: #fff;
+  @media screen and (max-width: 767px) {
+    min-width: 60%;
+  }
+}
+
+.cate_cate {
+  font-size: 1.2rem;
+}
+
+.cate_cate span {
+  font-size: 0.8rem;
+  color: #344ea2;
+}
+
+.cate_card progress::-moz-progress-bar {
+  accent-color: #344ea2;
+  height: 10px;
+  width: 100%;
+}
+
+.cate_card progress::-webkit-progress-value {
+  accent-color: #344ea2;
+  height: 10px;
+  width: 100%;
+}
+
+.cate_card progress {
+  accent-color: #344ea2;
+  height: 10px;
+  width: 100%;
+}

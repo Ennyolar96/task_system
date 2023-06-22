@@ -1,0 +1,356 @@
+.navsec {
+  max-width: 100%;
+  margin: 30px;
+  display: flex;
+  padding: 0px 2px;
+  justify-content: center;
+}
+
+.display_flex {
+  /* text-align: center; */
+  padding: 0px 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.display_btn {
+  /* text-align: center; */
+  padding: 0px 20px;
+  display: flex;
+  background-color: #344ea2;
+  color: white;
+}
+
+.dropdown_icon {
+  padding: 4px;
+  color: white;
+}
+
+.menu_icon {
+  display: none;
+}
+
+.drpdwn_cntnt_mbl a {
+  display: none;
+}
+
+.dropdown_content_mobile {
+  display: none;
+}
+
+.display_flex .display_btn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  /* color: white; */
+  padding: 0 2px;
+  /* background-color: inherit; */
+  /* font-family: inherit; */
+  /* margin: 0; */
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  /* background-color: #f9f9f9; */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown_content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown_content a:hover {
+  background-color: #031955;
+}
+
+.display_flex:hover .dropdown_content {
+  display: block;
+}
+
+.display_flex2 {
+  /* padding-right: 30px; */
+  display: flex;
+}
+
+.search_b {
+  display: flex;
+  padding: 0px 30px;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+
+.search_icon {
+  /* padding: 4px; */
+  position: absolute;
+  left: 2rem;
+  fill: #777;
+  width: 1rem;
+  height: 1rem;
+}
+
+.input {
+  height: 15px;
+  line-height: 18px;
+  padding: 0 0.2rem;
+  width: 100%;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #d9e8d8;
+  color: #0d0c22;
+  box-shadow: 0 0 5px #c1d9bf, 0 0 0 10px #f5f5f5eb;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #777;
+}
+
+.notify_b {
+  display: flex;
+}
+
+.notify_icon {
+  padding: 4px;
+}
+
+.section {
+  padding: 0 2rem;
+}
+
+.categ_card_flex {
+  display: flex;
+}
+
+.categ_card {
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 130px;
+  background-color: #031955;
+  margin: 30px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(179, 5, 243, 1);
+  border: 2px solid rgba(3, 25, 85, 1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.categ_card .categ_comp {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+
+.categ_card:hover {
+  height: 180px;
+}
+
+.categ_card:hover .categ_comp {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 40px;
+}
+
+.categ_content {
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.categ_tasks {
+  color: #3e5490;
+}
+
+.categ_content .categ_categ {
+  margin-top: 10px;
+}
+
+.categ_card .categ_progressbar {
+  background-color: #374d87; /** progress bar bg #374D87*/
+  border-radius: 20px;
+  padding: 3px;
+  height: 1px;
+}
+
+.categ_card .categ_progressbar2 {
+  background-color: #374d87; /** progress bar bg #374D87*/
+  border-radius: 20px;
+  padding: 3px;
+  height: 1px;
+}
+
+.categ_progressbar div {
+  background-color: #9a24c6; /** progress bar color #9A24C6  #3B66C2*/
+  width: 60%;
+  /* Adjust with JavaScript */
+  height: 1px;
+  border-radius: 10px;
+}
+
+.categ_progressbar2 div {
+  background-color: #3b66c2; /** progress bar color #9A24C6  #3B66C2*/
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 1px;
+  border-radius: 10px;
+}
+
+@media (max-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  .navsec {
+    max-width: 100%;
+    margin: 30px;
+    display: flex;
+    padding: 0px 2px;
+    justify-content: space-between;
+  }
+
+  .nav_menu {
+    display: none;
+  }
+
+  .dropdown_icon {
+    display: none;
+  }
+
+  .menu_icon {
+    padding: 4px;
+    color: white;
+    display: block;
+  }
+
+  .drpdwn_cntnt_mbl a {
+    /* padding-top: 8; */
+    display: block;
+    float: none;
+    width: 100%;
+    height: full;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    background-color: #031955;
+    text-align: center;
+  }
+
+  .search_text {
+    display: none;
+  }
+
+  notify_text {
+    display: none;
+  }
+
+  .dropdown_content a {
+    display: none;
+  }
+
+  .categ_card {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 130px;
+    background-color: #031955;
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(179, 5, 243, 1);
+    border: 2px solid rgba(3, 25, 85, 1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .navsec {
+    max-width: 100%;
+    margin: 30px;
+    display: flex;
+    padding: 0px 2px;
+    justify-content: space-between;
+  }
+
+  .nav_menu {
+    display: none;
+  }
+
+  .dropdown_icon {
+    display: none;
+  }
+
+  .menu_icon {
+    padding: 4px;
+    color: white;
+    display: block;
+  }
+
+  .drpdwn_cntnt_mbl a {
+    /* padding-top: 8; */
+    display: block;
+    float: none;
+    width: 100%;
+    height: full;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    background-color: #031955;
+    text-align: center;
+  }
+
+  .search_text {
+    display: none;
+  }
+
+  .notify_text {
+    display: none;
+  }
+
+  .dropdown_content a {
+    display: none;
+  }
+
+  .categ_card {
+    width: 100%;
+    max-width: 300px;
+    min-width: 260px;
+    height: 130px;
+    background-color: #031955;
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(179, 5, 243, 1);
+    border: 2px solid rgba(3, 25, 85, 1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
